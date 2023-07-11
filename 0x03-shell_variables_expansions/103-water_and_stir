@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "The sum of WATER ($water_value in base water) and STIR ($stir_value in base stir) is: $result_bestchol in base bestchol."
+echo$(printf%o$(($((5#$(echo$WATER|tr'water''01234')))+$(((5#$(echo$STIR|tr'stir''01234'))))) | tr '01234567''bestchol')
