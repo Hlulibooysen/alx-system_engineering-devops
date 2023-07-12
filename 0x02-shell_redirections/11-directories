@@ -1,2 +1,2 @@
-#!/bin/bash 
-find . -type ! -print . | wc -1 
+#!/bin/bash
+find . -type -not -name '.' | wc -1 
